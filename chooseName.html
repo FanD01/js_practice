@@ -82,7 +82,7 @@ function calculate(){
     var x=Math.pow(1+interest,payments);
     var monthly=(principal*x*interest)/(x-1);
     if(isFinite(monthly)){
-        payment.innerHTML=""；
+        payment.innerHTML="";
         chart();
     }
 }

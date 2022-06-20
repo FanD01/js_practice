@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function_practice</title>
+    <style>
+        :root{
+            box-sizing: border-box;
+            background-color: #000;
+        }
+        *,*::before,*::after{
+            box-sizing: inherit;
+        }
+        main{
+            max-width: 1080px;
+            text-align: center;
+        }
+        main > h2{
+            color: #fff;
+            text-align: center;
+        }
+        .ipt{
+            margin-top: 50px;
+        }
+        .ipt > p{
+            color: #fff;
+        }
+        .ipt > input{
+            height: 50px;
+            width: 300px;
+            border: 1px solid #000;
+            border-radius: 10px;
+        }
+        .submit > button{
+            width: 100px;
+            height: 30px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        /*更改alert样式*/
+
+
+    </style>
+</head>
+<body>
+<main>
+    <h2>贷款计算</h2>
+    <div class="ipt">
+        <p>请输入贷款金额：</p>
+        <input id="ipt_1" type="number">
+        <p>请输入年利率：</p>
+        <input id="ipt_2" type="number">
+        <p>请输入还款期限（月）：</p>
+        <input id="ipt_3" type="number">
+    </div>
+    <div class="submit">
+        <button id="btn_1">等额本息</button>
+        <button id="btn_2">先息后本</button>
+    </div>
+</main>
+<script>
+    const oBtn1 = document.getElementById("btn_1");
+    const oBtn2 = document.getElementById('btn_2')
+    const capital = document.getElementById('ipt_1');
+    const apr = document.getElementById('ipt_2');
+    const repayment = document.getElementById('ipt_3')
+    oBtn1.onclick = function (){
+        const a = capital.value;
+        const b = 1 + Number(apr.value);
+        const c = repayment.value;
+        const d = a * b / c;
+        alert(d);
+    };
+    oBtn2.onclick = function (){
+        const a = capital.value;
+        const b = apr.value;
+        const c = repayment.value;
+        const d = a * b / c;
+        alert(d);
+    };
+
+    //更改alert样式
+
+</script>
+</body>
+</html>
