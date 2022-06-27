@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js_caculate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Quick Tip</h1>
+        <section>
+            <div class="bill">
+                <label for="yourBill">Bill</label>
+                <input type="number" placeholder="Your Bill">
+            </div>
+            <div class="tipBox">
+                <div  class="space-between">
+                    <label for="tipInput">Section tip</label>
+                    <span id="tipPercent">0%</span>
+                </div>
+                <input type="range" value="0" id="tipInput" class="range">
+            </div>
+            <div class="space-between">
+                <span>Tip</span>
+                <span id="tipValue"></span>
+            </div>
+            <hr>
+            <div class="space-between total">
+                <span>Total</span>
+                <span id="totalWithTip"></span>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div class="space-between">
+                    <label for="splitInput">Split</label>
+                    <span id="splitValue">1 person</span>
+                </div>
+                <input type="range" value="0" id="splideInput" class="range">
+            </div>
+            <div class="space-between">
+                <span>Bill each</span>
+                <span id="billEach"></span>
+            </div>
+            <div class="space-between">
+                <span>Tip each</span>
+                <span id="tipEach"></span>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
