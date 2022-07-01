@@ -6,29 +6,219 @@
 }
 body{
     margin: 0;
-    font-family: helvetica, arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
 }
 a:link{
-    color: #9b9b9b;
+    color: #dbdbdb;
     font-weight: bold;
     text-decoration: none;
 }
 a:visited{
-    color: #2a2a2a;
+    color: #fff;
 }
 a:hover{
     text-decoration: none;
 }
 a:active{
-    color: #2a2a2a;
+    color: #fff;
 }
 ul{
     list-style: none;
 }
-nav ul{
-    max-width: 1280px;
-    display: flex;
+.top-section{
+    background-image: linear-gradient(#182848, #4b6cb7);
+    width: 100%;
+    height: 500px;
 }
-nav ul li{
-    margin-right: 1rem;
+.site-nav{
+    display: flex;
+    padding: 0.5em;
+    list-style-type: none;
+    border-radius: 0.5em;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.site-nav > li{
+    margin-top: 0;
+}
+.site-nav > li > a{
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+.site-nav > li + li{
+    margin-left: 1em;
+}
+.site-nav > .nav-right{
+    margin-left: auto;
+    background-color: #dbdbdb;
+}
+.top-section-word{
+    padding: 300px auto auto;
+}
+.top-section-word-box{
+    width: 600px;
+    height: auto;
+    color: #dbdbdb;
+    margin: 80px auto;
+    padding-left: 300px;
+}
+.top-section-word-box > p{
+    font-size: 1.5em;
+}
+.top-section-word-box > h2{
+    font-size: 2.2em;
+}
+.small-text{
+    color: rgba(255, 255, 255, 0.3);
+}
+.top-section-mail{
+    width: 600px;
+    height: auto;
+    margin: 10px auto;
+    text-align: center;
+    padding-left: 260px;
+}
+.top-section-mail > input{
+    width: 200px;
+    height: 30px;
+    border: #cacaca 1px solid;
+    border-radius: 15px;
+}
+.brand{
+    display: flex;
+    padding: 0.5em;
+    list-style-type: none;
+    border-radius: 0.5em;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.brand > ul{
+    display: flex;
+    margin: 20px auto;
+    max-width: 960px;
+    padding: 0;
+}
+.brand > ul > li{
+    width: 120px;
+    height: 120px;
+    background-color: #4b6cb7;
+    margin-left: 2em;
+    border-radius: 15px;
+}
+.card1{
+    max-width: 900px;
+    height: 300px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.card1-left{
+    width: 400px;
+    height: 300px;
+    margin-top: 30px;
+}
+.card1-left > h2{
+    font-size: 30px;
+}
+.card1-left button{
+    width: 100px;
+    height: 30px;
+    border: #4b6cb7 1px solid;
+    border-radius: 15px;
+    background-color: #4b6cb7;
+    color: #fff;
+}
+.small-text2{
+    color: rgba(52, 52, 52, 0.5);
+    line-height: 180%;
+}
+.card1-right{
+    width: 450px;
+    height: 300px;
+    margin-left: auto;
+    background-color: #182848;
+    border-radius: 20px;
+}
+.separate{
+    text-align: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.separate > p{
+    font-size: 1rem;
+}
+.separate > h2{
+    font-size: 3rem;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+}
+.advantage{
+    display: flex;
+    padding: 0.5em;
+    list-style-type: none;
+    border-radius: 0.5em;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.advantage-box{
+    margin: 20px auto;
+    max-width: 960px;
+    padding: 0;
+    margin-left: 2em;
+    text-align: center;
+}
+.advantage-box-img{
+    width: 80px;
+    height: 80px;
+    background-color: #4b6cb7;
+    border-radius: 10px;
+}
+.card2{
+    max-width: 900px;
+    height: 300px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.card2-right{
+    width: 400px;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: auto;
+}
+.card2-right > h2{
+    font-size: 30px;
+}
+.card2-right button{
+    width: 100px;
+    height: 30px;
+    border: #4b6cb7 1px solid;
+    border-radius: 15px;
+    background-color: #4b6cb7;
+    color: #fff;
+}
+.small-text2{
+    color: rgba(52, 52, 52, 0.5);
+    line-height: 180%;
+}
+.card2-left{
+    width: 450px;
+    height: 300px;
+    background-color: #182848;
+    border-radius: 20px;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #2a2a2a;
+    position: relative;
+}
+footer > p{
+    position: absolute;
+    bottom: 0;
+    left: 39%;
+    color: #fff;
+    font-size: 1rem;
 }
