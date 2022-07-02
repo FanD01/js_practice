@@ -170,3 +170,40 @@ main{
         text-align: center;
     }
 }
+@media (min-width: 35em) {
+    .row{
+        display: flex;
+        margin-left: 0.75em;
+        margin-right: -0.75em;
+    }
+    .column{
+        flex: 1;
+        margin-right: 0.75em;
+        margin-left: 0.75em
+    }
+}
+/*更多响应式布局参考https://bradfrost.github.io/this-is-responsive/patterns.html*/
+
+@media (min-width: 50em) {
+    .page-header{
+        padding: 1em 4em;
+    }
+}
+@media (min-width: 50em){
+    .hero{
+        padding: 7em 6em;
+    }
+}
+@media (min-width: 50em){
+    main{
+        padding: 2em 4em;
+    }
+}
+@media (min-width: 50em){
+    .nav-menu{
+        padding: 0.2em;
+    }
+}
+.row .column .bigImage{
+    width: 100%;
+}
