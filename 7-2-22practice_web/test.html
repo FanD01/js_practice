@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>menu-example</title>
+    <link rel="stylesheet" href="test1.css"/>
+</head>
+<body>
+<header id="header" class="page-header">
+    <div class="title">
+        <h2>Portfolio</h2>
+    </div>
+</header>
+<div class="dividing-header"></div>
+<nav class="menu" id="main-menu">
+    <button class="menu-toggle" id="toggle-menu">
+        toggle menu
+    </button>
+    <div class="menu-dropdown">
+        <ul class="nav-menu">
+            <li><a href="/UX_design.html">UX</a></li>
+            <li><a href="/UI_design.html">UI</a></li>
+            <li><a href="/Industrial_design.html">Industrial</a></li>
+            <li><a href="/Web_design.html">Web</a></li>
+        </ul>
+    </div>
+</nav>
+<script type="text/javascript">
+    (function(){
+        var button = document.getElementById('toggle-menu');
+        button.addEventListener('click', function(event){
+            event.preventDefault();
+            var menu = document.getElementById('main-menu');
+            menu.classList.toggle('is-open')
+        })
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+:root{
+    box-sizing: border-box;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+html{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a:link{
+    color: rgb(189, 189, 189);
+    text-decoration: none;
+}
+a:visited{
+    color: rgb(189, 189, 189);
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    color: rgb(73, 73, 73);
+    text-decoration: none;
+}
+.menu{
+    position: relative;
+}
+.menu-toggle{
+    position: absolute;
+    top: -1.2em;
+    right: 0.1em;
+    border: 0;
+    background-color: transparent;
+    color: gray;
+    font-size: 3em;
+    width: 1em;
+    height: 1em;
+    line-height: 0.4em;
+    text-indent: 5em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.menu-toggle::after{
+    position: absolute;
+    top: 0.3em;
+    left: 0.2em;
+    display: block;
+    content: "\2261";
+    text-indent: 0;
+}
+.menu-dropdown{
+    display: none;
+    position:absolute;
+    right: 0;
+    left: 0;
+    margin: 0;
+}
+.menu.is-open .menu-dropdown{
+    display: block;
+}
+.nav-menu{
+    margin: 0;
+    padding-left: 0;
+    border: 1px solid #ccc;
+    list-style: none;
+    background-color: #000;
+    color: #fff;
+}
+.nav-menu > li + li{
+    border-top: 1px solid #ccc;
+}
+.nav-menu > li > a{
+    display: block;
+    padding: 00.8em 1em;
+    color: #fff;
+    font-weight: normal;
+}
