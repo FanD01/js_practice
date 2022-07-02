@@ -5,12 +5,13 @@
     box-sizing: inherit;
 }
 html{
-    margin: 0;
     font-family: 'Raleway', sans-serif;
+    padding: 10px;
 }
 ul{
     list-style: none;
 }
+/*以上是整个网页的css设置*/
 a:link{
     color: rgb(189, 189, 189);
     text-decoration: none;
@@ -25,6 +26,7 @@ a:active{
     color: rgb(73, 73, 73);
     text-decoration: none;
 }
+/*以上链接样式的css设置*/
 .menu{
     position: relative;
 }
@@ -65,8 +67,9 @@ a:active{
     margin: 0;
     padding-left: 0;
     border: 1px solid #ccc;
+    border-radius: 5vw;
     list-style: none;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
 }
 .nav-menu > li + li{
@@ -77,4 +80,125 @@ a:active{
     padding: 00.8em 1em;
     color: #fff;
     font-weight: normal;
+}
+/*以上是下拉按钮的css设置*/
+.banner{
+    width: auto;
+    height: 50vw;
+    background-color: black;
+    border-radius: 5vw;
+    padding: 15vw;
+    margin-bottom: 5vw;
+}
+.banner > h1{
+    color: rgb(255, 255, 255);
+    text-align: right;
+    margin-block-end: 5px;
+}
+.banner > p{
+    color: rgb(255, 255, 255, 0.5);
+    text-align: right;
+    margin-block-start: 5px;
+}
+.rotation{
+    
+}
+.left{
+    width: 5vw;
+    height: 5vw;
+    background-color: #fff;
+}
+.rotation .right{
+    width: 5vw;
+    height: 5vw;
+    background-color: #fff;
+}
+/*以上是banner的css设置*/
+aside{
+    display: none;
+}
+/*以上是产品分类的css设置*/
+main{
+    width: 100%;
+    height: auto;
+    border: #ccc 1px solid;
+    border-radius: 5vw;
+}
+.product{
+    width: 100%;
+    height: auto;
+}
+.product-header > h2{
+    display: inline-block;
+    margin-left: 20px;
+}
+.product-header > p{
+    display: inline-block;
+    color: rgba(190, 190, 190, 0.497);
+}
+.product-card{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+}
+.card{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    border-radius: 4vw;
+}
+.card > h3{
+    color: #fff;
+    margin-top: 200px;
+    margin-left: 10px;
+    font-weight: lighter;
+}
+.card > p{
+    color: #fff;
+    margin-left: 10px;
+    font-weight: normal;
+}
+.turn-page-ul{
+    width: 100%;
+    text-align: right;
+    padding-right: 20px;
+}
+.turn-page-ul > li{
+    display: inline;
+    margin-left: 5px;
+}
+/*以上是产品卡片的css设置*/
+footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    border-radius: 4vw;
+    padding: 10px;
+    margin-top: 20px;
+}
+.advertise{
+    text-align: center;
+    color: #fff;
+}
+.footer-sort{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+.footer-sort > ul{
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.footer-sort > ul > li{
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline;
+}
+.footer-sort > p{
+    margin-top: 20px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.568);
 }
